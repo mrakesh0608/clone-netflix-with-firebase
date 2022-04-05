@@ -39,9 +39,8 @@ signUpBtn.addEventListener('click', () => {
     let Name = document.getElementById('Name').value;
     let email = document.getElementById('up-usermail').value;
     let password = document.getElementById('up-pass').value;
-    alert("ho");
     email = email.substring(0, email.length - 4); //to remove .com
-    alert(email);
+    
     if (Name === "" || email === "" || password === "") {
         alert('Please enter details again');
     }
