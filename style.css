@@ -182,6 +182,12 @@ ul{
 }
 @media(max-width:1050px)
 {
+    .FQ span{
+        font-size: 18px;
+    }
+    .FA{
+        font-size: 15px;
+    }
     #FAQ-ul li{
         width: 100%;
     }
