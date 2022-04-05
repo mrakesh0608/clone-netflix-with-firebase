@@ -1,0 +1,51 @@
+@media (max-width:900px)
+{
+    #header{
+        justify-content: center;
+    }
+}
+#auth{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    margin-bottom: 60px;
+}
+.sign{
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    width: 400px;
+}
+.sign input{
+    width: 100%;
+    margin: 10px 0;
+    padding: 16px 15px;
+    background-color: #333333;
+    color: #8C8C8C;
+    outline: none;
+    border: none;
+}
+.sign input:focus{
+    color: white;
+    background-color: #6b6969;
+}
+.sign-btn{
+    background-color: #E50914;
+    padding: 16px 15px;
+    text-align: center;
+    border-radius: 4px;
+    width: 100%;
+    margin: 20px 0;
+}
+.sign p{
+    color: gray;
+}
+a{
+    color: white;
+}
+/* Sign Up */
+#Sign-up{
+    display: none;
+}
