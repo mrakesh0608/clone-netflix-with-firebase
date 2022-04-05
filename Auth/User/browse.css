@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+.desc{
+    font-family: 'Arial';
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+/* Header */
+#header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#category a{
+    margin: 15px;
+    padding: 5px;
+    font-weight: bold;
+}
+#category a:hover{
+    border-bottom: 1px solid white;
+}
+/* Poster */
+#poster{
+    background: url(Poster/joker.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-bottom: 5px solid rgb(80, 80, 80);
+}
+#poster-ele{
+    width: 45%;
+    margin: 80px 15px;
+}
+#poster-ele h2{
+    font-size: 50px;
+}
+.play{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.play:hover{
+    cursor: pointer;
+}
+@media (max-width:650px)
+{
+    #header{
+        justify-content: center;
+    }
+    #poster{
+        background-position: center;
+    }
+    #poster-ele{
+        width: auto;
+        padding: 5px 10px ;
+        margin: 15px 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    #poster-ele h2{
+        font-size: 35px;
+        margin: 0;
+    }
+}
+/* Cards */
+#films-series{
+    border-bottom: 5px solid rgb(80, 80, 80);
+    padding: 30px;
+}
+.slide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.slide div{
+    margin-right: 5px;
+}
+.slide div img{
+    width: 100%;
+    transition: 0.3s;
+}
+.slide div img:hover{
+    transform: scale(1.2);
+}
+.cf{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.cf h2{
+    font-size: 20px;
+}
+.cf p{
+    max-width: 600px;
+}
+.cf img{
+    max-width:100%;
+}
+@media (max-width:1000px)
+{
+    .cf{
+        flex-wrap: wrap;
+    }
+}
+.card:hover{
+    cursor: pointer;
+}
+.card-desc{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.close-cf{
+    position: absolute;
+    float: right;
+    right: 50px;
+    margin-top: 20px;
+    border: white 1px solid;
+    border-radius: 50%;
+    color: white;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0);
+}
+/* none */
+#Series,.cf{
+    display: none;
+}
+/* Footer */
+#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 80px;
+    color: gray;
+}
+#footer-links{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#footer-links li{
+    width: 200px;
+    margin: 10px;
+    margin-left: 0;
+}
+#footer-links a{
+    color: gray;
+}
+#footer-links a:hover{
+    text-decoration: underline;
+}
+
+/* Video Player */
+#video-player{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* intially */
+    display: none;
+    padding: 70;
+}
+#video-player div{
+    width: 70%;
+}
+@media(max-width:650px)
+{
+    #video-player div{
+        width: 90%;
+    }
+}
+#vide{
+    width: 100%;
+    border: 1px white solid;
+}
