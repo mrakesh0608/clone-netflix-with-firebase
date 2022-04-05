@@ -91,6 +91,9 @@ ul{
 }
 @media (max-width:500px)
 {
+    #optform{
+        margin: 25px 20px 50px 20px;
+    }
     .email-text{
         justify-content: center;
     }
